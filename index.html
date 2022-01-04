@@ -64,6 +64,19 @@
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
+      <a-assets>
+                <video
+                    id="vid"
+                    src="Alex2.mp4"
+                    preload="auto"
+                    response-type="arraybuffer"
+                    crossorigin
+                    webkit-playsinline
+                    autoplay
+                    loop
+                    playsinline
+                ></video>
+            </a-assets>
       <a-nft
         type="nft"
         url="alex"
@@ -73,8 +86,8 @@
         smoothThreshold="5">
           <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
           <a-video
-                    src="Alex2.mp4"
-                    scale="1.6 1 1"
+                    src="#vid"
+                    scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
                     class="clickable"
