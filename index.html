@@ -13,12 +13,12 @@
                     var marker = this.el;
                     this.vid = document.querySelector("#vid");
 
-                    marker.addEventListener('markerFound', function () {
+                    marker.addEventListener('nftFound', function () {
                         this.toggle = true;
                         this.vid.play();
                     }.bind(this));
 
-                    marker.addEventListener('markerLost', function () {
+                    marker.addEventListener('nftLost', function () {
                         this.toggle = false;
                         this.vid.pause();
                     }.bind(this));
